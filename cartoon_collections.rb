@@ -12,9 +12,9 @@ def long_planeteer_calls(words)# code an argument here
   words.any? { |word| word.length > 4  }
 end
 
-def find_the_cheese(cheeses)# code an argument here
+def find_the_cheese(ingredients)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  return cheese_types if cheese_types.any? { |cheese| cheeses.include?(cheese)  }
+  return cheese if cheese_types.any? { |cheese| ingredients.include?(cheese)  }
 
 end
